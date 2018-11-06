@@ -1,0 +1,69 @@
+=HolmesGroup=
+
+#DB SA account;
+#Polycom331 manual provisioning;
+
+
+
+
+==Devices==
+	•	Polycom331	Further test in process, will update once confirm steps;
+	•	SPA942		Manual factory reset;
+	•	SPA50x 		WebGUI update provisioning value to trigger factory reset;
+	•	PAP2T 		WebGUI factory reset;
+	•	SPA112		WebGUI factory reset;
+	•	Cisco79xx	Manual factory reset with instruction provided;
+
+
+==Preparation==
+	•	Data migration at business hour;
+	•	Clean device legacy config on new server;
+	•	Schedule technician availability for each office;
+	•	Notify users and provide factory reset instructions;
+
+==Cut-Over==
+	•	Update router config including DHCP, SIP-Server;
+	•	Clean all existing DHCP and SIP-UA;
+	•	Update all VG224 configs;
+
+==Test==
+	•	Inbound call flow of production queues;
+	•	Internal Inbound outbound calls;
+	•	External inbound outbound calls;
+	•	Across office inbound outbound calls;
+	•	Blind supervised transferring;
+	•	IPFX agent client testing;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==Outstanding==
+Check if the SPA942 back to normal;
+Alert message explain;
+
+==ActionPlan for Cut-over new Server==
+Data migration;
+Archive DB SA;
+Clean device config residue;
+Update router DHCP;
+Update router SIP-UA;
+Update VG224 SIP-server;
+
+
+Poly331		Further test needed;
+
+SPA942		Manual factory reset;
+SPA50x 		WebGUI provisioning update;
+PAP2T 		WebGUI factory reset;
+SPA112		WebGUI factory reset;
+Cisco79xx	Manual factory reset;
